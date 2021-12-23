@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mgb-16 {
+    margin-bottom: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    border-radius: 15px;
+    padding: 12px 12px;
+    position: relative;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-icons__heart, .card-icons__cart-add {
+    font-size: 28px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.card-img {
+    margin: auto;
+    height: 200px;
+    width: 90%;
+}
+
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card-img img:hover {
+    transform: translateY(-20px) rotate(-20deg) ;
+}
+
+.card-title, .card-price {
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-price {
+    margin-bottom: 8px;
+}
+
+.card-options__size, .card-options__color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.card-options__size span {
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 0 8px;
+    margin: 0 6px;
+    color: #000;
+    cursor: pointer;
+}
+
+.card-options__color-green,
+.card-options__color-red,
+.card-options__color-black {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 0 8px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+.card-options__color-green {
+    background-color: green;
+}
+
+.card-options__color-red {
+    background-color: red;
+}
+
+.card-options__color-black {
+    background-color: black;
+}
+
+.card-options__btn-buy {
+    background-color: #4daf54;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-options__btn-buy:hover {
+    transform: scale(0.9);
+}
